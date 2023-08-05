@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A website for Code Along with Videos">
+    <meta name="keywords" content="HTML, CSS, JavaScript, tutorial">
+    <meta name="author" content="Amrahsay">
+    <title>Code Along with Videos</title>
+    <link rel="shortcut icon" type="image/icon" href="https://lh3.googleusercontent.com/ogw/AGvuzYbJ_U-4-liC6xaDMBOiS7QsctRU3lFq6tOsIRLa=s32-c-mo">
+    <!-- for tab logo. -->
+</head>
+<body>
+    <header id="example-header">
+        <h1>Welcome to our website!</h1>
+        <nav id="1st-navigator">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="example-main">
+        <section>
+            <h2>About Us</h2>
+            <p>Our company is dedicated to providing <strong>quality</strong> products to our customers.</p>
+            <p>Here is a <i><q><b>quote</b></q></i>:</p>
+            <blockquote>
+                <p>This is a great product.</p>
+                <p>Highly recommended!</p>
+            </blockquote>
+            <p>Check out this image:</p>
+            <img src="location-of-image/imagename.format" alt="Text if the image doesn't load" width="300" height="200">
+        </section>
+    </main>
+    <div id="HTML-page-structure-&-tags-inside-main-tag">
+        <!-- without writing any code but only some lines and saving the file the text is stored in body tag if we inspect it after opening it in browser -->
+        <article><!-- Article content goes here --></article>
+        <section>
+            <div>
+                <h1 style="font-style: italic;">Types of Heading</h1>
+                <h2>Subheading 1</h2>
+                <!-- h3 to h6 omitted for brevity -->
+                <p>Paragraph tag with nested tags: <i>italic tag with <b>bold tag <strong>extra dark</strong></b></i></p>
+                <p>Line breaks are created using the <br> tag.</p>
+                <q>Quotation with <sub>subscript</sub> and <sup>superscript</sup> tags</q><br>
+                &lt; - Less-than sign<br>
+                &gt; - Greater-than sign<br>
+                &apos; - Apostrophe<br>
+                &nbsp; - Non-breaking space<br>
+
+                <ul>
+                    <li>Unordered list item 1</li>
+                    <li>Unordered list item 2</li>
+                    <li>Unordered list item 3</li>
+                </ul>
+
+                <ol type="A" start="10">
+                    <li>Ordered list item 10</li>
+                    <li>Ordered list item 11</li>
+                    <li>Ordered list item 12</li>
+                </ol>
+
+                <img src="location-of-image/imagename.format" alt="text-if-the-image-doesn't-load" height="200" width="300">
+                <figure>
+                    <img src="location-of-image/imagename.format" alt="Example Image">
+                    <figcaption>Caption for the image</figcaption>
+                </figure>
+                <audio src="audiofile.mp3" controls></audio><br>
+                <audio><!-- if we want to be on safe side we include multiple types of media. -->
+                    <source src="" type=""><br>
+                    <source src="" type=""><br>
+                    <source src="" type=""><br>
+                    <source src="audiofile.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio><br>
+                <video height="50%" width="60%" controls>
+                	<source src="https://videos.xanimeporn.com/play.mp4?id=55468" type="video/mp4">
+                </video><br>
+
+                <a href="https://www.example.com" target="_blank">Link to example.com in a new tab</a><br>
+                <!-- use # to go to top of the same page or -->
+                <a href="#HTML-page-structure-&-tags">Link to a section on the same page</a><br>
+
+            </div>
+        </section>
+        <aside>
+            <!-- Aside content goes here -->
+        </aside>
+    </div>
+    <div id="adding-table">
+        <table id="example-table" style="border-collapse: collapse; width: 100%; border: 1px solid #ccc;">
+            <caption>This is an exemplary table</caption>
+            <tr>
+                <th colspan="3" style="border: 1px solid #ccc; padding: 8px;">Header Row 1 (Span 3 columns)</th>
+                <th rowspan="2" style="border: 1px solid #ccc; padding: 8px;">Header Row 2 (Span 2 rows)</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Header Row 3</th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid #ccc; padding: 8px;">Cell A</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Cell B</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Cell C</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Cell D</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 8px;">Cell 1</td>
+                <td style="border: 1px solid #ccc; padding: 8px;">Cell 2</td>
+                <td style="border: 1px solid #ccc; padding: 8px;">Cell 3</td>
+                <td style="border: 1px solid #ccc; padding: 8px;">Cell 4</td>
+                <td style="border: 1px solid #ccc; padding: 8px;">Cell 5</td>
+            </tr>
+        </table>
+    </div>
+    <div id="adding-form">
+        <section>
+            <form action="address-to-where-data-to-sent" method="get">
+                <label for="input-EX-box1">this will be showed for the input box</label><br>
+                <input type="text" id="input-EX-box1" name="name" value="Example-text" placeholder="Example-text" required><br>
+                <label for="input-EX-box2">this will be showed for the input box</label><br>
+                <input type="text" id="input-EX-box2" name="location" value="India" placeholder="India" required disabled><br>
+                <!-- type can take number,time,email,url,range min="" max="",radio(checkbox),checkbox -->
+                <!-- disabled makes it unable to make change 
+                checked will be used if radio/checkbox type is selected-->
+                <select name="month" multiple>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                </select><br>
+                <textarea name="message" rows="4" cols="50">Enter your message here...</textarea><br>
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset Form</button>
+                <input type="button" value="BUTTON1" name="">
+            </form>
+        </section>
+    </div>
+    <footer id="example-footer">
+        <section>
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Reset Form">
+
+                <button type="button" onclick="alert('This is a button')">Click Me!</button>
+            </form>
+        </section>
+        <p>Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+</body>
+</html>
